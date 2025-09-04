@@ -35,7 +35,6 @@ import TableBook from "./pages/TableBook";
 import AddSetting from "./pages/AddSetting";
 import AddSocialIcone from "./pages/AddSocialIcone";
 
-
 import FrontendLayout from "./layout/FrontendLayout";
 import MainContent from "./pages/frontend/MainContent";
 import About from "./pages/frontend/About";
@@ -44,17 +43,18 @@ import Gallery from "./pages/frontend/Gallery";
 import Contact from "./pages/frontend/Contact";
 import ReserveTable from "./pages/frontend/ReserveTable";
 
-
-
-
-
-
-
-
 function Routing() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/*" element={<FrontendLayout />}>
+        <Route path="home" element={<MainContent />} />
+        <Route path="about" element={<About />} />
+        <Route path="menu" element={<Menu />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="reservetable" element={<ReserveTable />} />
+      </Route>
+      <Route path="/login" element={<Login />} />
       <Route path="register" element={<Register />} />
       <Route
         path="admin"
@@ -102,15 +102,6 @@ function Routing() {
         <Route path="tablebook" element={<TableBook />} />
         <Route path="addsetting" element={<AddSetting />} />
         <Route path="addsocialicone" element={<AddSocialIcone />} />
-      </Route>
-
-      <Route path="frontend" element={<FrontendLayout />}>
-        <Route path="home" element={<MainContent />} />
-        <Route path="about" element={<About />} />
-        <Route path="menu" element={<Menu />} />
-        <Route path="gallery" element={<Gallery />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="reservetable" element={<ReserveTable />} />
       </Route>
     </Routes>
   );
