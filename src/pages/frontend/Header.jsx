@@ -4,17 +4,19 @@ import { useTheme } from "../../contex/TheemProvider";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
-   const { setting } =useTheme()
-   const [isOpen, setOpen] = useState(false)
+  const { setting } = useTheme();
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <nav className="bg-white shadow-lg fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {setting && (
-            <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-deep-red">{setting.name}</h1>
-            </div>
+              <div className="flex items-center">
+                <h1 className="text-2xl font-bold text-deep-red">
+                  {setting.name}
+                </h1>
+              </div>
             )}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
@@ -22,12 +24,12 @@ function Header() {
                   to="/"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
-                  `relative  py-2 inline-block transition-all duration-200 ${
-                    isActive
-                      ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
-                      : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
-                  }`
-                }
+                    `relative  py-2 inline-block transition-all duration-200 ${
+                      isActive
+                        ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
+                    }`
+                  }
                 >
                   Home
                 </NavLink>
@@ -35,12 +37,12 @@ function Header() {
                   to="/about"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
-                  `relative  py-2 inline-block transition-all duration-200 ${
-                    isActive
-                      ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
-                      : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
-                  }`
-                }
+                    `relative  py-2 inline-block transition-all duration-200 ${
+                      isActive
+                        ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
+                    }`
+                  }
                 >
                   About
                 </NavLink>
@@ -48,12 +50,12 @@ function Header() {
                   to="/menu"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
-                  `relative  py-2 inline-block transition-all duration-200 ${
-                    isActive
-                      ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
-                      : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
-                  }`
-                }
+                    `relative  py-2 inline-block transition-all duration-200 ${
+                      isActive
+                        ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
+                    }`
+                  }
                 >
                   Menu
                 </NavLink>
@@ -61,12 +63,12 @@ function Header() {
                   to="/gallery"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
-                  `relative  py-2 inline-block transition-all duration-200 ${
-                    isActive
-                      ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
-                      : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
-                  }`
-                }
+                    `relative  py-2 inline-block transition-all duration-200 ${
+                      isActive
+                        ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
+                    }`
+                  }
                 >
                   Gallery
                 </NavLink>
@@ -74,24 +76,24 @@ function Header() {
                   to="/contact"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
-                  `relative  py-2 inline-block transition-all duration-200 ${
-                    isActive
-                      ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
-                      : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
-                  }`
-                }
+                    `relative  py-2 inline-block transition-all duration-200 ${
+                      isActive
+                        ? "text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        : "text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
+                    }`
+                  }
                 >
                   Contact
                 </NavLink>
                 <Link
-                   to="/reservetable"
+                  to="/reservetable"
                   className="bg-skin-golden text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition duration-300 font-medium"
                 >
                   Reserve Table
                 </Link>
-                  <Link
-                   to="/login"
-                  className=" text-white px-6 py-2 rounded-full transition duration-300 font-medium"
+                <Link
+                  to="/login"
+                  className=" text-skin-Red  font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
                 >
                   Login
                 </Link>
@@ -103,54 +105,53 @@ function Header() {
                 className="text-gray-700 text-2xl hover:text-deep-red"
                 onClick={() => setOpen(!isOpen)}
               >
-               <RxHamburgerMenu />
-
+                <RxHamburgerMenu />
               </button>
             </div>
           </div>
         </div>
         {/* <!-- Mobile menu --> */}
         {isOpen && (
-        <div id="mobile-menu" className="md:hidden  bg-white border-t">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link
-             to="/home"
-              className="block px-3 py-2 text-gray-700 hover:text-deep-red"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="block px-3 py-2 text-gray-700 hover:text-deep-red"
-            >
-              About
-            </Link>
-            <Link
-              to="/menu"
-              className="block px-3 py-2 text-gray-700 hover:text-deep-red"
-            >
-              Menu
-            </Link>
-            <Link
-               to="/gallery"
-              className="block px-3 py-2 text-gray-700 hover:text-deep-red"
-            >
-              Gallery
-            </Link>
-            <Link
-               to="/contact"
-              className="block px-3 py-2 text-gray-700 hover:text-deep-red"
-            >
-              Contact
-            </Link>
-            <Link
-              to="/reservetable"
-              className="block px-3 py-2 bg-skin-golden text-white rounded"
-            >
-              Reserve Table
-            </Link>
+          <div id="mobile-menu" className="md:hidden  bg-white border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              <Link
+                to="/home"
+                className="block px-3 py-2 text-gray-700 hover:text-deep-red"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="block px-3 py-2 text-gray-700 hover:text-deep-red"
+              >
+                About
+              </Link>
+              <Link
+                to="/menu"
+                className="block px-3 py-2 text-gray-700 hover:text-deep-red"
+              >
+                Menu
+              </Link>
+              <Link
+                to="/gallery"
+                className="block px-3 py-2 text-gray-700 hover:text-deep-red"
+              >
+                Gallery
+              </Link>
+              <Link
+                to="/contact"
+                className="block px-3 py-2 text-gray-700 hover:text-deep-red"
+              >
+                Contact
+              </Link>
+              <Link
+                to="/reservetable"
+                className="block px-3 py-2 bg-skin-golden text-white rounded"
+              >
+                Reserve Table
+              </Link>
+            </div>
           </div>
-        </div>
         )}
       </nav>
     </>
