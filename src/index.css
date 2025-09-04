@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-skin-yellow: oklch(0.8022 0.166 72.01);
+  --color-skin-golden: oklch(0.7665 0.1387 91.06);
+  --color-skin-Red: oklch(0.3999 0.1641 29.23);
+}
+
+a.active {
+  @apply bg-purple-600;
+}
+
+.text-warm-gold {
+  color: #d4af37;
+}
+.bg-warm-gold {
+  background-color: #d4af37;
+}
+.text-deep-red {
+  color: #8b0000;
+}
+.bg-deep-red {
+  background-color: #8b0000;
+}
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
