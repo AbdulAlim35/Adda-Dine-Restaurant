@@ -46,15 +46,16 @@ import ReserveTable from "./pages/frontend/ReserveTable";
 function Routing() {
   return (
     <Routes>
-      <Route path="/*" element={<FrontendLayout />}>
-        <Route path="home" element={<MainContent />} />
+
+      <Route path="/" element={<FrontendLayout />}>
+        <Route index element={<MainContent />} />
         <Route path="about" element={<About />} />
         <Route path="menu" element={<Menu />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="contact" element={<Contact />} />
         <Route path="reservetable" element={<ReserveTable />} />
       </Route>
-      <Route path="/login" element={<Login />} />
+            <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
       <Route
         path="admin"

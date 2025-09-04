@@ -19,7 +19,7 @@ function Header() {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 <NavLink
-                  to="/frontend/home"
+                  to="/"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
                   `relative  py-2 inline-block transition-all duration-200 ${
@@ -32,7 +32,7 @@ function Header() {
                   Home
                 </NavLink>
                 <NavLink
-                  to="/frontend/about"
+                  to="/about"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
                   `relative  py-2 inline-block transition-all duration-200 ${
@@ -45,7 +45,7 @@ function Header() {
                   About
                 </NavLink>
                 <NavLink
-                  to="/frontend/menu"
+                  to="/menu"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
                   `relative  py-2 inline-block transition-all duration-200 ${
@@ -58,7 +58,7 @@ function Header() {
                   Menu
                 </NavLink>
                 <NavLink
-                  to="/frontend/gallery"
+                  to="/gallery"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
                   `relative  py-2 inline-block transition-all duration-200 ${
@@ -71,7 +71,7 @@ function Header() {
                   Gallery
                 </NavLink>
                 <NavLink
-                  to="/frontend/contact"
+                  to="/contact"
                   onClick={() => window.scrollTo(0, 0)}
                   className={({ isActive }) =>
                   `relative  py-2 inline-block transition-all duration-200 ${
@@ -84,7 +84,7 @@ function Header() {
                   Contact
                 </NavLink>
                 <Link
-                   to="/frontend/reservetable"
+                   to="/reservetable"
                   className="bg-skin-golden text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition duration-300 font-medium"
                 >
                   Reserve Table
@@ -108,37 +108,37 @@ function Header() {
         <div id="mobile-menu" className="md:hidden  bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
-             to="/frontend/home"
+             to="/home"
               className="block px-3 py-2 text-gray-700 hover:text-deep-red"
             >
               Home
             </Link>
             <Link
-              to="/frontend/about"
+              to="/about"
               className="block px-3 py-2 text-gray-700 hover:text-deep-red"
             >
               About
             </Link>
             <Link
-              to="/frontend/menu"
+              to="/menu"
               className="block px-3 py-2 text-gray-700 hover:text-deep-red"
             >
               Menu
             </Link>
             <Link
-               to="/frontend/gallery"
+               to="/gallery"
               className="block px-3 py-2 text-gray-700 hover:text-deep-red"
             >
               Gallery
             </Link>
             <Link
-               to="/frontend/contact"
+               to="/contact"
               className="block px-3 py-2 text-gray-700 hover:text-deep-red"
             >
               Contact
             </Link>
             <Link
-              to="/frontend/reservetable"
+              to="/reservetable"
               className="block px-3 py-2 bg-skin-golden text-white rounded"
             >
               Reserve Table
