@@ -89,6 +89,12 @@ function Header() {
                 >
                   Reserve Table
                 </Link>
+                  <Link
+                   to="/login"
+                  className=" text-white px-6 py-2 rounded-full transition duration-300 font-medium"
+                >
+                  Login
+                </Link>
               </div>
             </div>
             <div className="md:hidden">
