@@ -6,6 +6,7 @@ import aboutDatabase from "../../service/aboutDatabase";
 import chefDatabase from "../../service/chefDatabase";
 import { useTheme } from "../../contex/TheemProvider";
 import heroDatabase from "../../service/heroDatabase";
+import { Link } from "react-router-dom";
 
 function MainContent() {
   const [item, setItem] = useState([]);
@@ -62,18 +63,20 @@ function MainContent() {
                 {get.content}
               </p>
               <div className="space-x-4">
-                <a
-                  href="#menu"
+                <Link
+                  to="/menu"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-block bg-skin-golden text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transform hover:scale-105 transition duration-300"
                 >
                   View Menu
-                </a>
-                <a
-                  href="#reservation"
+                </Link>
+                <Link
+                  to="/reservetable"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-800 transition duration-300"
                 >
                   Make Reservation
-                </a>
+                </Link>
               </div>
             </div>
           </div>

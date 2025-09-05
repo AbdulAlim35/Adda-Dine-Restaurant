@@ -8,6 +8,7 @@ import culinaryIconeDatabase from "../../service/culinaryIconeDatabase";
 import offerDatabase from "../../service/offerDatabase";
 import offerListDatabase from "../../service/offerListDatabase";
 import databaseService from "../../service/databaseService";
+import { Link } from "react-router-dom";
 
 
 function Menu() {
@@ -250,18 +251,20 @@ function Menu() {
               {heroBanner.bannercontent}
             </p>
             <div className="space-x-4">
-              <a
-                href="index.html#reservation"
+              <Link
+                to="/reservetable"
+                onClick={() => window.scrollTo(0, 0)}
                 className="inline-block bg-skin-golden text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transform hover:scale-105 transition duration-300"
               >
                 Make a Reservation
-              </a>
-              <a
-                href="index.html#contact"
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => window.scrollTo(0, 0)}
                 className="inline-block border-2 border-deep-red text-deep-red px-8 py-4 rounded-full text-lg font-semibold hover:bg-deep-red hover:text-white transition duration-300"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -93,7 +93,7 @@ function Header() {
                 </Link>
                 <Link
                   to="/login"
-                  className="text-gray-700 font-medium hover:text-skin-Red after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
+                  className="bg-red-500 hover:bg-red-800 px-6 py-2 rounded-full text-white font-medium  after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-skin-Red after:scale-x-0 after:origin-left after:transition-transform after:duration-300"
                 >
                   Login
                 </Link>

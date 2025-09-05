@@ -15,7 +15,6 @@ function Footer() {
   useEffect(() => {
     const fatch = async () => {
       const sent = await socialIconeDatabase.listPost();
-
       setIcone(sent.documents);
     };
     fatch();

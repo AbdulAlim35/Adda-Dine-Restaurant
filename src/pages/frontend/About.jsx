@@ -230,13 +230,15 @@ function About() {
             </p>
             <div className="space-x-4">
               <Link
-               
+               to="/reservetable"
+               onClick={() => window.scrollTo(0, 0)}
                 className="inline-block bg-skin-golden text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-600 transform hover:scale-105 transition duration-300"
               >
                 Make a Reservation
               </Link>
               <Link
-              
+              to="/menu"
+              onClick={() => window.scrollTo(0, 0)}
                 className="inline-block border-2 border-deep-red text-deep-red px-8 py-4 rounded-full text-lg font-semibold hover:bg-deep-red hover:text-white transition duration-300"
               >
                 View Our Menu
