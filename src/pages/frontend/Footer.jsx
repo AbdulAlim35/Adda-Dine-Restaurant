@@ -54,7 +54,8 @@ function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/frontend/home"
+                  to="/"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="text-gray-300 hover:text-warm-gold transition duration-300"
                 >
                   Home
@@ -62,7 +63,8 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="/frontend/about"
+                  to="/about"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="text-gray-300 hover:text-warm-gold transition duration-300"
                 >
                   About
@@ -70,7 +72,8 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="/frontend/menu"
+                   to="/menu"
+                   onClick={() => window.scrollTo(0, 0)}
                   className="text-gray-300 hover:text-warm-gold transition duration-300"
                 >
                   Menu
@@ -78,7 +81,8 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="#reservation"
+                  to="/reservetable"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="text-gray-300 hover:text-warm-gold transition duration-300"
                 >
                   Reservations

@@ -86,6 +86,7 @@ function Header() {
                   Contact
                 </NavLink>
                 <Link
+                 onClick={() => window.scrollTo(0, 0)}
                   to="/reservetable"
                   className="bg-skin-golden text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition duration-300 font-medium"
                 >
@@ -114,42 +115,48 @@ function Header() {
         {isOpen && (
           <div id="mobile-menu" className="md:hidden  bg-white border-t">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link
+              <NavLink
+               onClick={() => window.scrollTo(0, 0)}
                 to="/home"
                 className="block px-3 py-2 text-gray-700 hover:text-deep-red"
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+               onClick={() => window.scrollTo(0, 0)}
                 to="/about"
                 className="block px-3 py-2 text-gray-700 hover:text-deep-red"
               >
                 About
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+               onClick={() => window.scrollTo(0, 0)}
                 to="/menu"
                 className="block px-3 py-2 text-gray-700 hover:text-deep-red"
               >
                 Menu
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+               onClick={() => window.scrollTo(0, 0)}
                 to="/gallery"
                 className="block px-3 py-2 text-gray-700 hover:text-deep-red"
               >
                 Gallery
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+               onClick={() => window.scrollTo(0, 0)}
                 to="/contact"
                 className="block px-3 py-2 text-gray-700 hover:text-deep-red"
               >
                 Contact
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+               onClick={() => window.scrollTo(0, 0)}
                 to="/reservetable"
                 className="block px-3 py-2 bg-skin-golden text-white rounded"
               >
                 Reserve Table
-              </Link>
+              </NavLink>
             </div>
           </div>
         )}
