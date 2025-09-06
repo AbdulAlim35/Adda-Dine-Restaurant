@@ -16,7 +16,7 @@ function ReserveTable() {
   id="reservation"
   className="py-20 text-white bg-cover bg-center relative"
   style={{
-    backgroundImage: "url('public/images/10-ZBG-Restaurant-Zoom-Background_1000x1000.webp')",
+    backgroundImage: "url('public/images/restaurant-bg.webp')",
   }}
 >
   {/* Overlay for readability */}
